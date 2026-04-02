@@ -5,8 +5,3 @@ dist
 .env
 .env.local
 *.tgz
-
-# lock
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
