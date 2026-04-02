@@ -6,7 +6,7 @@ Boring avatars is a tiny JavaScript library that generates custom, SVG-based ava
 
 <a href="https://www.npmjs.com/package/boring-avatars-vanilla">
 
-![npm](https://badgen.net/npm/v/boring-avatars-vanilla)
+![npm](https://img.shields.io/npm/v/boring-avatars-vanilla)
 ![build](https://github.com/hustcc/boring-avatars-vanilla/actions/workflows/build.yml/badge.svg)
 ![deploy](https://github.com/hustcc/boring-avatars-vanilla/actions/workflows/deploy.yml/badge.svg)
 
