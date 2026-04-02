@@ -1,0 +1,19 @@
+{
+  "name": "boring-avatars-site",
+  "version": "1.0.0",
+  "description": "Boring avatars playground using vanilla library",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "boring-avatars-vanilla": "file:../"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.3",
+    "vite": "^7.0.0"
+  },
+  "repository": "git@github.com:boringdesigners/boring-avatars.git"
+}

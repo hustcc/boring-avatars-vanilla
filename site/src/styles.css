@@ -1,0 +1,233 @@
+:root {
+  --sp-xs: 0.25rem;
+  --sp-s: 0.5rem;
+  --sp-m: 1rem;
+  --sp-l: 1.5rem;
+  --sp-xl: 3rem;
+
+  --textbox-x: 0.8rem;
+  --textbox-y: 0.4rem;
+  --textbox: 0.4rem 1rem;
+
+  --pagePadding: var(--sp-l);
+
+  --buttonHeight: 1.8rem;
+
+  --c-fieldHover: hsla(0, 0%, 0%, 0.15);
+  --c-fieldFocus: hsla(0, 0%, 0%, 0.3);
+  --c-background: hsl(0, 0%, 100%);
+  --c-body: hsl(0, 0%, 20%);
+  --c-button: hsla(0, 0%, 0%, 0.1);
+  --c-buttonHover: hsla(0, 0%, 0%, 0.2);
+  --c-fade: hsla(0, 0%, 0%, 0.4);
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background-color: var(--c-background);
+  color: var(--c-body);
+  line-height: 1.5;
+}
+
+.banner {
+  background: var(--c-body);
+  color: var(--c-background);
+  padding: var(--sp-l);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.banner a {
+  color: white;
+  text-decoration: underline;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: auto 1fr auto auto auto auto;
+  padding: var(--pagePadding);
+  align-items: center;
+  grid-gap: var(--sp-s);
+}
+
+@media (max-width: 900px) {
+  .header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+}
+
+.segment-group {
+  background-color: var(--c-button);
+  padding: 0.2rem;
+  border-radius: 10rem;
+  display: inline-flex;
+  gap: 0.2rem;
+}
+
+.segment {
+  appearance: none;
+  font: inherit;
+  color: var(--c-fade);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--textbox-x);
+  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 20rem;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  min-height: var(--buttonHeight);
+  border: none;
+  transition: all 0.2s;
+}
+
+.segment:hover {
+  background-color: var(--c-buttonHover);
+}
+
+.segment.selected {
+  background-color: var(--c-background);
+  color: var(--c-body);
+}
+
+.size-dot {
+  padding: 0;
+  width: var(--buttonHeight);
+  position: relative;
+}
+
+.size-dot::after {
+  content: '';
+  background-color: currentColor;
+  border-radius: 10rem;
+}
+
+.size-dot.small::after {
+  width: 8px;
+  height: 8px;
+}
+
+.size-dot.medium::after {
+  width: 14px;
+  height: 14px;
+}
+
+.size-dot.large::after {
+  width: 20px;
+  height: 20px;
+}
+
+.colors-section {
+  display: inline-grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: max-content;
+  grid-gap: var(--sp-xs);
+}
+
+.color-dot {
+  position: relative;
+  width: var(--buttonHeight);
+  height: var(--buttonHeight);
+  border-radius: 10rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.color-input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150%;
+  height: 150%;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.button {
+  appearance: none;
+  font: inherit;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--textbox);
+  background: var(--c-button);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 20rem;
+  font-size: 0.7rem;
+  line-height: 1.3;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+  min-height: var(--buttonHeight);
+  border: none;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: var(--c-buttonHover);
+}
+
+.avatars-grid {
+  display: grid;
+  grid-gap: var(--sp-l) var(--sp-s);
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  padding: var(--pagePadding);
+}
+
+.avatar-container {
+  display: grid;
+  grid-gap: var(--sp-s);
+  padding: 0 var(--sp-m);
+  font-size: 0.8rem;
+}
+
+.avatar-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+}
+
+.avatar-section svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.avatar-input {
+  padding: var(--textbox);
+  font: inherit;
+  color: inherit;
+  border: 1px solid transparent;
+  transition: 0.5s;
+  width: 100%;
+  text-align: center;
+  border-radius: 100rem;
+  background: transparent;
+  font-size: 0.8rem;
+}
+
+.avatar-input:hover {
+  border-color: var(--c-fieldHover);
+  transition: 0.2s;
+}
+
+.avatar-input:focus {
+  border-color: var(--c-fieldFocus);
+  outline: none;
+}

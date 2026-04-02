@@ -1,0 +1,27 @@
+<svg
+  viewBox="0 0 80 80"
+  fill="none"
+  role="img"
+  xmlns="http://www.w3.org/2000/svg"
+  width="40px"
+  height="40px"
+>
+  
+  <mask id="boring-avatar-ID" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+    <rect width="80" height="80" rx="160" fill="#FFFFFF" />
+  </mask>
+  <g mask="url(#boring-avatar-ID)">
+    <path fill="url(#gradient_paint0_linear_TestUserWithSpaces_boring-avatar-ID)" d="M0 0h80v40H0z" />
+    <path fill="url(#gradient_paint1_linear_TestUserWithSpaces_boring-avatar-ID)" d="M0 40h80v40H0z" />
+  </g>
+  <defs>
+    <linearGradient id="gradient_paint0_linear_TestUserWithSpaces_boring-avatar-ID" x1="40" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#92A1C6" />
+      <stop offset="1" stop-color="#146A7C" />
+    </linearGradient>
+    <linearGradient id="gradient_paint1_linear_TestUserWithSpaces_boring-avatar-ID" x1="40" y1="40" x2="40" y2="80" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0AB3D" />
+      <stop offset="1" stop-color="#C271B4" />
+    </linearGradient>
+  </defs>
+</svg>

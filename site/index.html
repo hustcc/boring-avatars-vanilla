@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boring Avatars - Vanilla</title>
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+  <div class="banner">
+    This is a playground using <a href="https://github.com/hustcc/boring-avatars-vanilla" target="_blank"><strong>boring-avatars-vanilla</strong></a> library.
+  </div>
+
+  <header class="header">
+    <div class="segment-group" id="variant-selector">
+      <button class="segment" data-variant="beam">beam</button>
+      <button class="segment" data-variant="bauhaus">bauhaus</button>
+      <button class="segment" data-variant="ring">ring</button>
+      <button class="segment" data-variant="sunset">sunset</button>
+      <button class="segment" data-variant="pixel">pixel</button>
+      <button class="segment" data-variant="marble">marble</button>
+    </div>
+
+    <div class="colors-section" id="colors-section">
+      <div class="color-dot" data-index="0">
+        <input type="color" class="color-input" data-index="0">
+      </div>
+      <div class="color-dot" data-index="1">
+        <input type="color" class="color-input" data-index="1">
+      </div>
+      <div class="color-dot" data-index="2">
+        <input type="color" class="color-input" data-index="2">
+      </div>
+      <div class="color-dot" data-index="3">
+        <input type="color" class="color-input" data-index="3">
+      </div>
+      <div class="color-dot" data-index="4">
+        <input type="color" class="color-input" data-index="4">
+      </div>
+    </div>
+
+    <button class="button" id="random-palette">Random palette</button>
+    <button class="button" id="toggle-square">Square</button>
+
+    <div class="segment-group" id="size-selector">
+      <button class="segment size-dot small" data-size="40"></button>
+      <button class="segment size-dot medium" data-size="80"></button>
+      <button class="segment size-dot large" data-size="128"></button>
+    </div>
+  </header>
+
+  <main class="avatars-grid" id="avatars-grid"></main>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>

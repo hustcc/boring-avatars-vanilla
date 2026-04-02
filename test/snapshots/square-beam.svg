@@ -1,0 +1,30 @@
+<svg
+  viewBox="0 0 36 36"
+  fill="none"
+  role="img"
+  xmlns="http://www.w3.org/2000/svg"
+  width="40px"
+  height="40px"
+>
+  
+  <mask id="boring-avatar-ID" maskUnits="userSpaceOnUse" x="0" y="0" width="36" height="36">
+    <rect width="36" height="36" fill="#FFFFFF" />
+  </mask>
+  <g mask="url(#boring-avatar-ID)">
+    <rect width="36" height="36" fill="#C20D90" />
+    <rect
+      x="0"
+      y="0"
+      width="36"
+      height="36"
+      transform="translate(5 3) rotate(191 18 18) scale(1.2)"
+      fill="#146A7C"
+      rx="6"
+    />
+    <g transform="translate(7 0) rotate(-1 18 18)">
+      <path d="M15 21c2 1 4 1 6 0" stroke="#FFFFFF" fill="none" stroke-linecap="round" />
+      <rect x="13" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#FFFFFF" />
+      <rect x="21" y="14" width="1.5" height="2" rx="1" stroke="none" fill="#FFFFFF" />
+    </g>
+  </g>
+</svg>

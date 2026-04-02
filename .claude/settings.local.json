@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv vanilla/.[^.]* .)",
+      "Bash(mv vanilla/* .)",
+      "Bash(cp:*)",
+      "Bash(chmod:*)"
+    ]
+  }
+}

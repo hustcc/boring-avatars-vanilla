@@ -1,0 +1,24 @@
+<svg
+  viewBox="0 0 90 90"
+  fill="none"
+  role="img"
+  xmlns="http://www.w3.org/2000/svg"
+  width="40px"
+  height="40px"
+>
+  
+  <mask id="boring-avatar-ID" maskUnits="userSpaceOnUse" x="0" y="0" width="90" height="90">
+    <rect width="90" height="90" rx="180" fill="#FFFFFF" />
+  </mask>
+  <g mask="url(#boring-avatar-ID)">
+    <path d="M0 0h90v45H0z" fill="#146A7C" />
+    <path d="M0 45h90v45H0z" fill="#F0AB3D" />
+    <path d="M83 45a38 38 0 00-76 0h76z" fill="#F0AB3D" />
+    <path d="M83 45a38 38 0 01-76 0h76z" fill="#C271B4" />
+    <path d="M77 45a32 32 0 10-64 0h64z" fill="#C271B4" />
+    <path d="M77 45a32 32 0 11-64 0h64z" fill="#C20D90" />
+    <path d="M71 45a26 26 0 00-52 0h52z" fill="#C20D90" />
+    <path d="M71 45a26 26 0 01-52 0h52z" fill="#146A7C" />
+    <circle cx="45" cy="45" r="23" fill="#92A1C6" />
+  </g>
+</svg>

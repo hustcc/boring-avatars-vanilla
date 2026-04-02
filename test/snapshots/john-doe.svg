@@ -1,0 +1,36 @@
+<svg
+  viewBox="0 0 80 80"
+  fill="none"
+  role="img"
+  xmlns="http://www.w3.org/2000/svg"
+  width="40px"
+  height="40px"
+>
+  
+  <mask id="boring-avatar-ID" maskUnits="userSpaceOnUse" x="0" y="0" width="80" height="80">
+    <rect width="80" height="80" rx="160" fill="#FFFFFF" />
+  </mask>
+  <g mask="url(#boring-avatar-ID)">
+    <rect width="80" height="80" fill="#F0AB3D" />
+    <path
+      filter="url(#filter_boring-avatar-ID)"
+      d="M32.414 59.35L50.376 70.5H72.5v-71H33.728L26.5 13.381l19.057 27.08L32.414 59.35z"
+      fill="#C271B4"
+      transform="translate(6 6) rotate(294 40 40) scale(1.3)"
+    />
+    <path
+      filter="url(#filter_boring-avatar-ID)"
+      style="mix-blend-mode: overlay"
+      d="M22.216 24L0 46.75l14.108 38.129L78 86l-3.081-59.276-22.378 4.005 12.972 20.186-23.35 27.395L22.215 24z"
+      fill="#C20D90"
+      transform="translate(-1 1) rotate(-81 40 40) scale(1.3)"
+    />
+  </g>
+  <defs>
+    <filter id="filter_boring-avatar-ID" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+      <feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="7" result="effect1_foregroundBlur" />
+    </filter>
+  </defs>
+</svg>
