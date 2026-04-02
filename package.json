@@ -40,5 +40,5 @@
     "vite-plugin-dts": "^4.5.4",
     "vitest": "^3.0.0"
   },
-  "repository": "git@github.com:boringdesigners/boring-avatars.git"
+  "repository": "git@github.com:hustcc/boring-avatars-vanilla.git"
 }
