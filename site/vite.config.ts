@@ -3,7 +3,7 @@ import { resolve } from 'path';
 
 export default defineConfig({
   root: '.',
-  base: '/boring-avatars-vanilla/',
+  base: process.env.BASE_URL || '/boring-avatars-vanilla/',
   build: {
     outDir: 'dist',
     emptyOutDir: true,
