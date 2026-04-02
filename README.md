@@ -2,7 +2,7 @@
 
 Boring avatars is a tiny JavaScript library that generates custom, SVG-based avatars from any username and color palette. Works in both browsers and Node.js server-side rendering.
 
-![boring-avatars-preview](./boring-avatars-preview.png)
+![boring-avatars-preview](https://github.com/user-attachments/assets/685f2dfd-3447-43a7-976c-0f16afd95d5b)
 
 <a href="https://www.npmjs.com/package/boring-avatars-vanilla">
 

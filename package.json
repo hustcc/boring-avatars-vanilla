@@ -1,6 +1,6 @@
 {
   "name": "boring-avatars-vanilla",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Boring avatars as a vanilla JavaScript library, SVG-based avatars from any username and color palette. Works in both browsers and Node.js server-side rendering.",
   "type": "module",
   "main": "./dist/index.cjs",
