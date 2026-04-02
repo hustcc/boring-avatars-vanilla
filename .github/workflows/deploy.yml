@@ -22,7 +22,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm i
 
       - name: Build library
         run: npm run build
@@ -30,7 +30,7 @@ jobs:
       - name: Build site
         working-directory: ./site
         run: |
-          npm ci
+          npm i
           npm run build
 
       - name: Deploy to gh-pages
