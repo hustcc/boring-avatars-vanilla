@@ -8,22 +8,6 @@ export default defineConfig({
       insertTypesEntry: true,
       include: ['src/**/*.ts'],
     }),
-    {
-      // Vite 7 intentionally skips minification for the ES lib format.
-      // Using generateBundle (runs after all renderChunk hooks) ensures
-      // the ES output is minified after Vite's own transforms complete.
-      name: 'minify-es',
-      enforce: 'post',
-      async generateBundle(_options, bundle) {
-        const { transform } = await import('esbuild');
-        for (const chunk of Object.values(bundle)) {
-          if (chunk.type === 'chunk' && chunk.fileName.endsWith('.js')) {
-            const result = await transform(chunk.code, { minify: true });
-            chunk.code = result.code;
-          }
-        }
-      },
-    },
   ],
   build: {
     lib: {
@@ -46,8 +30,7 @@ export default defineConfig({
         exports: 'named',
       },
     },
-    // Minify CJS and UMD; ES is handled by the minify-es plugin above
-    // because Vite 7 skips minification for ES lib format by design
+    // Minify all outputs (CJS and UMD are used directly in browsers/CDN)
     minify: 'esbuild',
     // Clean output directory
     emptyOutDir: true,
