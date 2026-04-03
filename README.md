@@ -18,6 +18,39 @@ Boring avatars is a tiny JavaScript library that generates custom, SVG-based ava
 npm install boring-avatars-vanilla
 ```
 
+## Browser Usage (CDN)
+
+You can use boring-avatars directly in the browser without any build tools:
+
+### Via unpkg
+
+```html
+<script src="https://unpkg.com/boring-avatars-vanilla/dist/index.umd.js"></script>
+```
+
+### Via jsDelivr
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/boring-avatars-vanilla/dist/index.umd.js"></script>
+```
+
+### Complete Example
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/boring-avatars-vanilla/dist/index.umd.js"></script>
+  </head>
+  <body>
+    <div id="avatar"></div>
+    <script>
+      document.getElementById('avatar').innerHTML = BoringAvatars({ name: 'Maria Mitchell' });
+    </script>
+  </body>
+</html>
+```
+
 ## Usage
 
 ```javascript
