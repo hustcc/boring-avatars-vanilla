@@ -32,6 +32,21 @@ document.getElementById('avatar').innerHTML = svg;
 fs.writeFileSync('avatar.svg', svg);
 ```
 
+## CDN / Script Tag Usage
+
+You can also use the library directly in an HTML page via a `<script>` tag (UMD build):
+
+```html
+<!-- unpkg -->
+<script src="https://unpkg.com/boring-avatars-vanilla@1.0.2/dist/index.umd.js"></script>
+<!-- or jsDelivr -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/boring-avatars-vanilla@1.0.2/dist/index.umd.js"></script> -->
+<script>
+  const svg = BoringAvatars.boring({ name: 'Maria Mitchell', variant: 'beam' });
+  document.getElementById('avatar').innerHTML = svg;
+</script>
+```
+
 ### Props
 
 | Prop    | Type                                                         | Default                                                   |

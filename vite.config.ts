@@ -26,8 +26,12 @@ export default defineConfig({
       output: {
         // Provide global variables for UMD build
         globals: {},
+        // Support both named and default exports
+        exports: 'named',
       },
     },
+    // Minify all outputs (CJS and UMD are used directly in browsers/CDN)
+    minify: 'esbuild',
     // Clean output directory
     emptyOutDir: true,
   },
