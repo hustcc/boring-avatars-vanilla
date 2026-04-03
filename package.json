@@ -13,6 +13,7 @@
       "require": "./dist/index.cjs"
     }
   },
+  "umd": "./dist/index.umd.js",
   "files": [
     "dist"
   ],

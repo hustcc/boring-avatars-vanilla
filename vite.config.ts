@@ -26,6 +26,8 @@ export default defineConfig({
       output: {
         // Provide global variables for UMD build
         globals: {},
+        // Support both named and default exports
+        exports: 'named',
       },
     },
     // Clean output directory
