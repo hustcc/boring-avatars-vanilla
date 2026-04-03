@@ -38,9 +38,9 @@ You can also use the library directly in an HTML page via a `<script>` tag (UMD 
 
 ```html
 <!-- unpkg -->
-<script src="https://unpkg.com/boring-avatars-vanilla@1.0.1/dist/index.umd.js"></script>
+<script src="https://unpkg.com/boring-avatars-vanilla@1.0.2/dist/index.umd.js"></script>
 <!-- or jsDelivr -->
-<!-- <script src="https://cdn.jsdelivr.net/npm/boring-avatars-vanilla@1.0.1/dist/index.umd.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/boring-avatars-vanilla@1.0.2/dist/index.umd.js"></script> -->
 <script>
   const svg = BoringAvatars.boring({ name: 'Maria Mitchell', variant: 'beam' });
   document.getElementById('avatar').innerHTML = svg;

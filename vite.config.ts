@@ -29,6 +29,17 @@ export default defineConfig({
         // Support both named and default exports
         exports: 'named',
       },
+      plugins: [
+        {
+          name: 'minify-umd',
+          async renderChunk(code, _chunk, opts) {
+            if (opts.format !== 'umd') return null;
+            const { transform } = await import('esbuild');
+            const result = await transform(code, { minify: true });
+            return { code: result.code, map: result.map || null };
+          },
+        },
+      ],
     },
     // Clean output directory
     emptyOutDir: true,
